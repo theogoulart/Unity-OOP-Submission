@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
         get { return _attemptsCount; }
         private set
         {
-            Debug.Log(value);
             if (value < 0)
             {
                 return;
