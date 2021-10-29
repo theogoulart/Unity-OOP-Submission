@@ -9,6 +9,7 @@ public class RedSphere : BaseSphere
         base.Start();
     }
 
+    // POLYMORPHISM
     protected override Vector3 GetLaunchForce()
     {
         Debug.Log(_mMovementDirection);

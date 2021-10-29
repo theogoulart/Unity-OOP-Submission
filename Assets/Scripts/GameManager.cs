@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<GameObject> spherePrefabList;
     [SerializeField] Transform sphereSpawner;
     [SerializeField] Text attemptsText;
+
+    // ENCAPSULATION
     private int _attemptsCount = 0;
     public int AttemptsCount
     {
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
         SpawnSphere();
     }
 
+    // ABSTRACTION
     public void SpawnSphere()
     {
         AttemptsCount++;
